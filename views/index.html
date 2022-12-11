@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>sundarArtAI - Explore open source AI models to make content, high accuracy!</title>
+    <meta content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals." name="description">
+    <meta content="audio,video,summarizer,transcript,setiment,analysis,ai,models" name="keywords">
+
+    <meta property="og:title" content="sundarArtAI - Explore open source AI models to make content, high accuracy.!">
+    <meta property="og:description" content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals.">
+    <meta property="og:type" content="article">
+
+    <!-- Favicons -->
+    <link href="/img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--===============================================================================================-->
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+    .img-sm {
+        height: 3rem;
+    }
+    
+    .display-2 {
+        font-size: calc(1.475rem + 2.7vw) !important;
+    }
+    
+    .lead {
+        font-size: 1.5rem;
+    }
+    
+    .carousel .carousel-item {
+        color: #999;
+        overflow: hidden;
+        min-height: 120px;
+        font-size: 13px;
+    }
+    
+    .carousel .media img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .carousel .testimonial {
+        padding: 0 15px 0 60px;
+        position: relative;
+    }
+    
+    .carousel .testimonial::before {
+        content: "\201C";
+        font-family: Arial, sans-serif;
+        color: rgba(88, 55, 208, 1);
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 54px;
+        position: absolute;
+        left: 15px;
+        top: 0;
+    }
+    
+    .carousel .overview b {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: rgba(88, 55, 208, 1);
+    }
+    
+    .carousel .carousel-indicators {
+        bottom: -40px;
+    }
+    
+    .carousel-indicators li,
+    .carousel-indicators li.active {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 1px 3px;
+        box-sizing: border-box;
+    }
+    
+    .carousel-indicators li {
+        background: #e2e2e2;
+        border: 4px solid #fff;
+    }
+    
+    .carousel-indicators li.active {
+        color: #fff;
+        background: rgba(88, 55, 208, 1);
+        border: 5px double;
+    }
+    
+    .custom-link {
+        color: black;
+        text-align: start !important;
+    }
+    
+    .custom-link:hover {
+        background-color: rgba(88, 55, 208, 0.1);
+    }
+</style>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span>sundarArtAI</span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="dropdown"><a href="#"><span>Create</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a href="/text-to-image" target="_blank" class="custom-link text-lg-start">
+                                    <div class="row">
+                                        <i class="col-1 bi bi-image"></i>
+                                        <div class="text-lg-start col">
+                                            <span class="text-dark d-block">Text to Image</span>
+                                            <span class="small">Generate text to image</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/speech-to-text" class="custom-link text-lg-start">
+                                    <div class="row">
+                                        <i class="col-1 bi bi-mic-fill"></i>
+                                        <div class="col text-lg-start">
+                                            <span class="text-dark d-block">Speech to Text <span class="badge badge-sm badge-primary ml-2">New</span></span>
+                                            <span class="small">Transcript audio & video files</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/text-to-image" class="custom-link text-lg-start">
+                                    <div class="row">
+                                        <i class="col-1 bi bi-images"></i>
+                                        <div class="text-lg-start col">
+                                            <span class="text-dark d-block">Image to Image</span>
+                                            <span class="small">Generate image to image</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#magic-tools"><i class="bi bi-magic"></i> Magic Tools</a></li>
+                    <li><a class="nav-link scrollto" href="#features">Features</a></li>
+                    <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+                    <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+                    <li><a class="getstarted scrollto" href="/speech-to-text">Get Started</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center" style="margin-top: 50px;">
+
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-12 col-lg-12 text-center">
+                    <h1 class="display-2 mb-4">Explore open source AI models to make content, high accuracy.</h1>
+                    <p class="lead m-4">Magical AI tools, high accuracy, on-demand service, the fastest turnaround through the use of AI and more. Your next-generation content creation suite.</p>
+                    <div class="text-center mt-4">
+                        <a href="/speech-to-text" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Let's start - It's free</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <video style="border: 1.5px solid black; max-width: 100%; width: 100%; height: auto; border-radius: 10px; margin-top: 50px;" autoplay="" loop="" muted="" playsinline="" class="w-full" poster="/videos/home/hero/hero-poster-image.png"><source src="/img/hero-video.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 60px !important;">
+                <header class="section-header">
+                    <h1 style="font-size: 35px;">Trusted By</h1>
+                </header>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-lx-10">
+                        <ul class="d-flex flex-wrap justify-content-center list-unstyled">
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/airbnb.svg" alt="airbnb logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/paypal.svg" alt="paypal logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/corsair.svg" alt="corsair logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/google.svg" alt="google logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/elastic.svg" alt="elastic logo">
+
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/forbes.svg" alt="forbes logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/pinterest.svg" alt="pinterest logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/docker.svg" alt="docker logo">
+                            </li>
+                            <li class="mx-3 mb-5">
+                                <img class="img-fluid img-sm" src="/img/clients/university-of-chicago.svg" alt="university logo">
+                            </li>
+                            <li class="mx-3 mb-5 mb-md-0">
+                                <img class="img-fluid img-sm" src="/img/clients/business-school.svg" alt="school logo">
+                            </li>
+                            <li class="mx-3 mb-5 mb-md-0">
+                                <img class="img-fluid img-sm" src="/img/clients/ebay.svg" alt="ebay logo">
+                            </li>
+                            <li class="mx-3 mb-5 mb-md-0">
+                                <img class="img-fluid img-sm" src="/img/clients/northwestern.svg" alt="northwestern logo">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="magic-tools" class="about p-0" style="margin-top: 60px !important;">
+
+            <div class="container" data-aos="fade-up" style="padding: 0; background-color: transparent;">
+                <header class="section-header pb-0">
+                    <h1 style="font-size: 35px; font-weight: 700;"><span style="color: rgba(88, 55, 208, 1); font-weight: bold;"><i class="bi bi-magic"></i>New:</span> Magic Tools</h1>
+                </header>
+
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-12 col-lg-12 text-center">
+                        <p class="lead m-4">Many creative tools to generate content like never before. Let's try some AI models to generate content with high accuracy.</p>
+                        <div class="text-center mt-0 mb-4">
+                            <a href="/text-to-image" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Let's start - It's free</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="card-columns m-3" style="margin-top: 50px !important;">
+                            <a href="/text-to-image" class="card" style="border-radius: 10px; background-image: linear-gradient(to right, #EB6440 40%, rgb(88, 55, 208) 100%); border: none;">
+                                <div class="card-body row">
+                                    <div class="col">
+                                        <p class="card-title mb-0 text-white" style="padding: 70px 20px; font-size: 25px; font-weight: bold;">Text to Image</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="/speech-to-text" class="card" style="border-radius: 10px; background-image: linear-gradient(to right, #A6CF98 40%, #9B3675 100%); border: none;">
+                                <div class="card-body row">
+                                    <div class="col">
+                                        <p class="card-title mb-0 text-white" style="padding: 70px 20px; font-size: 25px; font-weight: bold;">Speech to Text <span class="badge badge-sm badge-primary ml-2">New</span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="/text-to-image" class="card" style="border-radius: 10px; background-image: linear-gradient(to right, #E80F88 40%, #ED8240 100%); border: none;">
+                                <div class="card-body row">
+                                    <div class="col">
+                                        <p class="card-title mb-0 text-white" style="padding: 70px 20px; font-size: 25px; font-weight: bold;">Image to Image</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End About Section -->
+
+        <section id="features" class="about" style="margin-top: 60px !important; background-color: black; padding: 50px 20px;">
+            <header class="section-header">
+                <h1 style="font-size: 40px; font-weight: 700;" class="text-white mb-4">Powerful AI tools, help to generate content.</h1>
+                <span style="font-size: 22px;" class="text-white">A best and fast way to generate content with high accuracy with advanced AI models.</span>
+            </header>
+
+            <div class="container" style="padding: 0; background-color: transparent;">
+                <div class="row text-white">
+                    <div class="card-deck mt-4">
+
+                        <div class="card text-center" style="background: none;">
+                            <div>
+                                <img src="/img/ic_flash.png" class="img-fluid" height="80" width="80">
+                            </div>
+                            <div class="mt-4">
+                                <h2>5X<br>Better & Fast</h2>
+                                <p class="mt-4" style="margin: 0; color: rgba(255, 255, 255, 0.8);">sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals.</p>
+                            </div>
+                        </div>
+
+                        <div class="card text-center" style="background: none;">
+                            <div>
+                                <img src="/img/caption.png" class="img-fluid" height="80" width="80">
+                            </div>
+                            <div class="mt-4">
+                                <h2>High<br>Accuracy</h2>
+                                <p class="mt-4" style="margin: 0; color: rgba(255, 255, 255, 0.8);">The observation defines that our service has so far accuracy of around 99% and there is only 1% chance of error or a leniency. Join us, we helps to you scale up.</p>
+                            </div>
+                        </div>
+
+                        <div class="card text-center" style="background: none;">
+                            <div>
+                                <img src="/img/cpu.png" class="img-fluid" height="80" width="80">
+                            </div>
+                            <div class="mt-4">
+                                <h4>Advanced<br>AI Models</h4>
+                                <p class="mt-4" style="margin: 0; color: rgba(255, 255, 255, 0.8);">The advanced artificial intelligence has been used for generating content very quickly. Empower your team or customers with an AI sidekick to improve your processes and product.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" style="margin-top: 60px !important; padding: 50px 20px;">
+            <header class="section-header">
+                <h1 style="font-size: 40px; font-weight: 700;" class="text-black mb-4">Generate content in few seconds with our<br>mind-blowing & fast AI tools.</h1>
+                <span style="font-size: 22px;" class="text-black">You have never generate content like this before - Automate your workflows with our Magical AI Tools.</span>
+            </header>
+
+            <div class="container mt-4" style="padding: 0; background-color: transparent;">
+                <div class="row text-black">
+                    <div class="card col-12 mb-3 border-0">
+                        <div class="row g-0 justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <img src="/img/text-to-image-img.jpg" class="img-fluid" alt="" style="border-radius: 25px;">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title">Generate<br>Text to Image</h1>
+                                    <p class="card-text">Instantly generate images from text within few seconds. Let's try now!</p>
+                                    <div class="card-body p-0 mt-2">
+                                        <a href="/text-to-image" class="card-link" style="font-size: 18px; font-weight: bold;">Start creating now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-black" style="margin-top: 50px;">
+                    <div class="card col-12 mb-3 border-0">
+                        <div class="row g-0 justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title">Advanced<br>Speech to Text</h1>
+                                    <p class="card-text">Generate text of your YouTube videos, local audio & local video files within few seconds with high accuracy. We're using AssemblyAI APIs fo this & It's FASTEST!</p>
+                                    <div class="card-body p-0 mt-2">
+                                        <a href="/speech-to-text" class="card-link" style="font-size: 18px; font-weight: bold;">Let's Go - It's free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/speech-to-text-img.jpg" style="border-radius: 25px;" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+
+            <div class="container">
+
+                <header class="section-header">
+                    <h1 style="font-size: 40px; font-weight: 700;" class="text-black mb-4">What our customers saying!</h1>
+                </header>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                            </ol>
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="media">
+                                                <img src="/img/testimonials/testimonial-1.jpg" class="mr-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="testimonial">
+                                                        <p style="font-size: 18px;">I'm on the bullhorn to everyone about sundarArtAI saying how useful it would be to anyone creating stuff online</p>
+                                                        <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="media">
+                                                <img src="/img/testimonials/testimonial-2.jpg" class="mr-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="testimonial">
+                                                        <p style="font-size: 18px;">sundarArtAI is a great piece of browser web tool with the best team I've ever seen.</p>
+                                                        <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="media">
+                                                <img src="/img/testimonials/testimonial-3.jpg" class="mr-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="testimonial">
+                                                        <p style="font-size: 18px;">I love using sundarArtAI as the speech to text transcription is the most accurate I've seen on the market.</p>
+                                                        <p class="overview"><b>Martin Sommer</b>, Data Analyst</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="media">
+                                                <img src="/img/testimonials/testimonial-4.jpg" class="mr-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="testimonial">
+                                                        <p style="font-size: 18px;">When I hopped onto sundarArtAI and I just did input large file and it was perfectly transcribed.</p>
+                                                        <p class="overview"><b>John Williams</b>, Web Developer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Testimonials Section -->
+
+        <!-- ======= F.A.Q Section ======= -->
+        <section id="faq" class="faq" style="background-color: transparent; margin-top: 60px !important;">
+
+            <header class="section-header">
+                <h1 style="font-size: 40px; font-weight: 700;" class="text-black mb-4">FAQ</h1>
+                <span style="font-size: 22px;" class="text-black">Some Asked Questions</span>
+            </header>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- F.A.Q List 1-->
+                        <div class="accordion accordion-flush" id="faqlist1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">How to transcribe?</button>
+                                </h2>
+                                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Upload your audio/video file to sundarArtAI and it'll automatically start transcription. You can upload MP4, MOV, MP3, WAV and other popular audio/video file types. Currently we are supporting 12 AI modals for speech to text.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">Can I transcribe videos?</button>
+                                </h2>
+                                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Yes, you can! Upload your video file to sundarArtAI and our api will transcribe the original audio that was recorded in your video.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">Can I play audio/video after transcription done?</button>
+                                </h2>
+                                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Definitely Yes! When you’re done click on ‘Play’ button to play audio/video file. During playing audio/video, you can read & export transcripted text as well as.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <!-- F.A.Q List 2-->
+                        <div class="accordion accordion-flush" id="faqlist2">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">Can I transcribe YouTube videos?</button>
+                                </h2>
+                                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        Yes, You can transcribe your video also. You just have to paste youtube link in input field & sundarArtAI will automatically transcribe your video.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">Which audio/video format supported?</button>
+                                </h2>
+                                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        sundarArtAI can transcribe a large number of audio and video file formats. We supports almost all video/audio file format eg. MP4, WEBM, MTS, M2TS, TS, MOV, M4P, M4V, MXF, MP3, WAV, AC3, AAC, AMR, FLAC, ALAC, M4A, M4B, WV, VOC & others.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">Does sundarArtAI analyze sentiment?</button>
+                                </h2>
+                                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        Yes, sundarArtAI also analyze sentiment of given audio/video file. You'll get analyzed sentiment results as <strong>POSITIVE</strong>, <strong>NEGATIVE</strong> & <strong>NEUTRAL</strong>.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End F.A.Q Section -->
+
+    </main>
+    <!-- End #main -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer p-4 m-0" style="background-color: transparent;">
+        <div class="container text-center">
+            <h3 class="mt-3">@sundarArtAI</h3>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/js/main.js"></script>
+
+    <!--===============================================================================================-->
+    <script>
+    </script>
+    <!--===============================================================================================-->
+
+</body>
+
+</html>

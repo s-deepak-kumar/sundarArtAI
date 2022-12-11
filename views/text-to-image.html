@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>sundarArtAI - Explore open source AI models to make content, high accuracy!</title>
+    <meta content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals." name="description">
+    <meta content="audio,video,summarizer,transcript,setiment,analysis,ai,models" name="keywords">
+
+    <meta property="og:title" content="sundarArtAI - Explore open source AI models to make content, high accuracy.!">
+    <meta property="og:description" content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals.">
+    <meta property="og:type" content="article">
+
+    <!-- Favicons -->
+    <link href="/img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--===============================================================================================-->
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+    .form-control {
+        border: 1.5px solid rgba(88, 55, 208, 0.5);
+        background-color: rgba(88, 55, 208, 0.1);
+        color: rgba(88, 55, 208, 1) !important;
+    }
+    
+    .form-control:focus {
+        border: 1.5px solid rgba(88, 55, 208, 1);
+        background-color: rgba(88, 55, 208, 0.1);
+        box-shadow: none;
+    }
+    
+    label {
+        color: #5837D0 !important;
+    }
+    
+    .btn-primary:hover:not(:disabled) {
+        background-color: rgba(88, 55, 208, 0.8) !important;
+    }
+    
+    .btn-primary:focus {
+        box-shadow: none;
+    }
+    /*  */
+    /* width */
+    
+    .scrollbar-div::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    
+    .scrollbar-div::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px grey;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    /* Handle */
+    
+    .scrollbar-div::-webkit-scrollbar-thumb {
+        background: #5837D0;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    
+    .scrollbar-div::-webkit-scrollbar-thumb:hover {
+        background: rgba(88, 55, 208, 0.8);
+    }
+    
+    .output-links a {
+        background-color: #5837D0;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+    }
+    
+    .output-links a:hover {
+        background-color: rgba(88, 55, 208, 0.8);
+    }
+    
+    .card-img-overlay {
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .card:hover .card-img-overlay {
+        opacity: 1;
+        cursor: pointer;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    /*  */
+    
+    .card {
+        border: none;
+    }
+    
+    .card-columns {
+        column-gap: 10px !important;
+    }
+    
+    .card-img-top {
+        border-radius: 10px;
+    }
+    
+    @media (min-width: 576px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .card-columns {
+            column-count: 4;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .card-columns {
+            column-count: 5;
+        }
+    }
+    
+    .has-search .form-control {
+        padding: 1.5rem 3rem;
+        font-size: 16px;
+    }
+    
+    .form-control {
+        font-size: 16px;
+    }
+    
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 3.2rem;
+        text-align: center;
+        pointer-events: none;
+        color: #5837D0;
+    }
+    
+    #chooseFile:hover,
+    #deleteButton:hover {
+        cursor: pointer;
+        background-color: rgba(88, 55, 208, 0.5);
+    }
+</style>
+
+<body style="height: 100vh !important;">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex" style="background-color: #000000; padding: 10px 0;">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between" style="max-width: 95%;">
+
+            <a href="/" class="logo d-flex align-items-center">
+                <!-- <img src="/img/logo40px5.png" alt=""> -->
+                <div id="back-btn" class="d-flex align-items-center justify-content-center">
+                    <img src="/img/ic_back.png" width="20" height="20" alt="Logo Pixel Light">
+                </div>
+            </a>
+
+            <div style="width: 100%;">
+                <p class="text-white" style="text-align: center; font-size: 20px;"><strong><i class="bi bi-magic"></i> AI Magic Tools / </strong> Text to Image</p>
+            </div>
+
+            <button id="reset-btn" class="btn btn-primary" style="text-align: right;">Reset</button>
+
+            <!-- .navbar -->
+
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about d-flex">
+
+            <div class="container p-0" style="background-color: transparent; max-width: 95%; ;">
+                <div class="row justify-content-center m-0 p-0" style="width: 100% !important; overflow: hidden !important;">
+
+                    <div class="col-5 p-2" id="searchBarDiv">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="form-group has-search col m-0">
+                                <span style="color: #5837D0;" class="bi bi-search form-control-feedback"></span>
+                                <input type="text" id="search-text" name="search-text" style="border-radius: 100px" class="form-control" placeholder="Search for an image">
+                            </div>
+
+                            <input type="file" accept="image/*" name="file" id="file" hidden>
+                            <div id="chooseFile" class="col-1 d-flex p-2 justify-content-center align-items-center" style="border: 1px solid #5837D0; background-color: rgba(88, 55, 208, 0.2); border-radius: 50px; height: 45px; width: 45px;">
+                                <span style="color: #5837D0;" class="bi bi-image-fill m-0"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5 p-2" id="generateImageFormDiv">
+                        <form id="textToImageForm" method="post" class="card m-0 p-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="form-group mb-2">
+                                    <textarea style="resize: none; border-radius: 20px;" class="form-control" name="prompt" id="prompt" placeholder="Describe the image you want to generate..." rows="4"></textarea>
+                                </div>
+                                <label class="h6 mt-3 mb-3" style="color: gray !important; font-weight: bold;">Extra Settings</label>
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label class="p mb-1" style="font-size: 15px; color: gray;" for="width">Width</label>
+                                        <div class="input-group">
+                                            <input class="form-control" style="border-radius: 50px;" placeholder="Width" type="number" value="512" id="width" name="width">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label class="p mb-1" style="font-size: 15px; color: gray;" for="height">Height</label>
+                                        <div class="input-group">
+                                            <input class="form-control" style="border-radius: 50px;" placeholder="Height" type="number" value="512" id="height" name="height">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group m-0">
+                                    <label class="h6" for="sampler">Sampler</label>
+                                    <div class="input-group">
+                                        <select style="border-radius: 50px;" class="form-control custom-select" id="sampler" name="sampler">
+                                            <option value="k_dpmpp_2m" selected>k_dpmpp_2m</option>
+                                            <option value="ddim">ddim</option>
+                                            <option value="k_euler">k_euler</option>
+                                            <option value="k_euler_ancestral">k_euler_ancestral</option>
+                                            <option value="k_heun">k_heun</option>
+                                            <option value="k_dpm_2">k_dpm_2</option>
+                                            <option value="k_dpm_2_ancestral">k_dpm_2_ancestral</option>
+                                            <option value="k_dpmpp_2s_ancestral">k_dpmpp_2s_ancestral</option>
+                                            <option value="k_lms">k_lms</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 mb-0">
+                                    <label class="h6" for="exampleInputEmail1">Number of outputs</label>
+                                    <div id="output-number-btn-group" class="btn-group m-0" style="width: 100%;" role="group" aria-label="First group">
+                                        <button id="btn-1" style="border-radius: 50px 0 0 50px;" type="button" class="btn btn-secondary btn-primary">1</button>
+                                        <button type="button" class="btn btn-secondary">2</button>
+                                        <button type="button" class="btn btn-secondary">3</button>
+                                        <button type="button" class="btn btn-secondary">4</button>
+                                        <input id="custom-output-number" class="p-2 text-center form-control" placeholder="max 100" type="number" style="width: 90px; border-radius: 0 50px 50px 0;">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-center align-items-center" id="uploadedImageDiv">
+                    <div class="text-center d-flex justify-content-center align-items-center">
+                        <img id="uploaded-image" alt="input image" src="/img/loading_puzzle.gif" class="img-fluid" style="border-radius: 10px;" height="150" width="150">
+                        <div id="deleteButton" class="d-flex p-2 justify-content-center align-items-center ml-2" style="border: 1px solid #5837D0; background-color: rgba(88, 55, 208, 0.2); border-radius: 50px; height: 45px; width: 45px;">
+                            <span style="color: #5837D0;" class="bi bi-trash-fill m-0"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center mt-4" id="buttonsDiv">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button id="search-btn" type="submit" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" style="text-align: right; border-radius: 50px;">Search</button>
+                        <button id="generate-image-btn" type="submit" class="btn btn-secondary ml-4 pl-4 pr-4 pt-2 pb-2" style="text-align: right; border-radius: 50px;">Generate image</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center m-4" id="loadingBar">
+                    <div class="text-center">
+                        <img src="/img/loading_puzzle.gif" class="img-fluid" height="100" width="100">
+                        <h4 id="loading-title" class="m-2"></h4>
+                    </div>
+                </div>
+
+                <div id="outputsDiv" class="mt-4 row justify-content-center align-items-center">
+
+                    <div class="text-center">
+                        <h2 class="font-weight-light m-0">Generated Images</h2>
+                        <p class="m-0" style="font-size: 16px;">Below you can see the output results of generated images.</p>
+                    </div>
+
+                    <div class="row ">
+
+                        <div id="outputResults" class="card-columns m-3">
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="imagesDiv" class="row mt-4 justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2 class="font-weight-light m-0">Showing 50 Images</h2>
+                    </div>
+                    <div class="card-columns m-3" id="image-results">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End About Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--===============================================================================================-->
+    <script>
+        $(document).ready(function() {
+            $("#searchBarDiv").show();
+            $("#generateImageFormDiv").hide();
+            $("#uploadedImageDiv").hide();
+            $("#imagesDiv").hide();
+            $("#loadingBar").hide();
+            $("#outputsDiv").hide();
+
+
+            var prompt = "";
+            var width = 512;
+            var height = 512;
+            var sampler = "k_dpmpp_2m";
+            var output = 1;
+            var searchedText = "";
+            var searchedImage = ""
+            var searchedImageFileName = "";
+
+            $("#prompt").change(function() {
+                var value = $(this).val();
+                if (value != "") {
+                    prompt = value;
+                }
+            });
+
+            $("#width").change(function() {
+                var value = $(this).val();
+                if (value != "" && value != 0) {
+                    width = Number(value);
+                } else {
+                    if (value == 0) {
+                        $("#width").val(512);
+                    }
+                }
+            });
+
+            $("#height").change(function() {
+                var value = $(this).val();
+                if (value != "" && value != 0) {
+                    height = Number(value);
+                } else {
+                    if (value == 0) {
+                        $("#height").val(512);
+                    }
+                }
+            });
+
+            $("#search-text").change(function() {
+                var value = $(this).val();
+                if (value != "") {
+                    searchedText = value;
+                }
+            });
+
+            $("#sampler").change(function() {
+                var value = $(this).val();
+                console.log(value)
+                if (value != "") {
+                    sampler = value;
+                }
+            });
+
+            // Get click event, assign button to var, and get values from that var
+            $('#output-number-btn-group button').on('click', function() {
+                var thisBtn = $(this);
+
+                thisBtn.addClass('btn-primary').siblings().removeClass('btn-primary');
+                var btnText = thisBtn.text();
+                output = Number(btnText);
+
+                $("#custom-output-number").val("");
+            });
+
+            $("#custom-output-number").change(function() {
+                var value = $(this).val();
+                if (value != "" && value != 0) {
+                    output = Number(value);
+                    $('#output-number-btn-group').find('.btn-primary').removeClass('btn-primary');
+                } else {
+                    if (value == 0) {
+                        $("#custom-output-number").val(1);
+                    }
+                }
+            });
+
+            $("#reset-btn").click(function() {
+                $('#prompt').val("");
+                $('#width').val(512);
+                $('#height').val(512);
+                $('#sampler').val("k_dpmpp_2m");
+                $('#output-number-btn-group').find('.btn-primary').removeClass('btn-primary');
+                $('#btn-1').addClass('btn-primary');
+
+                prompt = "";
+                width = 512;
+                height = 512;
+                sampler = "k_dpmpp_2m";
+                output = 1;
+
+                searchedImage = "";
+                $("#file").val(null);
+                $("#searchBarDiv").show();
+                $("#generateImageFormDiv").hide();
+                $("#uploadedImageDiv").hide();
+                $("#imagesDiv").hide();
+                $("#loadingBar").hide();
+                $("#outputsDiv").hide();
+
+                imageSamples();
+            });
+
+            function isValidForm() {
+                if (prompt != "" && width != null && height != null && sampler != "" && output > 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            $('#search-btn').click(function() {
+                if ($('#searchBarDiv').is(':hidden')) {
+                    $('#searchBarDiv').show();
+                    $('#generateImageFormDiv').hide();
+                    $('#search-btn').removeClass('btn-secondary').addClass('btn-primary');
+                    $('#generate-image-btn').removeClass('btn-primary').addClass('btn-secondary');
+                } else {
+                    if (searchedText != "") {
+                        $(':input[type="submit"]').prop('disabled', true);
+                        if (searchedImage == "") {
+                            $('#loading-title').text("Searching Image...")
+                            $('#imagesDiv').hide();
+                            $('#loadingBar').show();
+                            $.ajax({
+                                url: 'https://lexica.art/api/v1/search?q=' + searchedText,
+                                type: 'GET',
+                                dataType: "JSON",
+                            }).done(function(response) {
+                                $("#image-results").empty();
+                                $(':input[type="submit"]').prop('disabled', false);
+                                response.images.forEach(image => {
+                                    $("#image-results").append(`<div class="col m-0 p-0"><div class="card"> <img src="${image.srcSmall}" class="card-img-top" alt="${image.prompt}"> <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;"> <p class="card-text text-white text-center" style="font-size: 16px">${image.prompt}</p> <div class="output-links text-center mt-2"> <a href="${image.src}" target="_blank" download="${image.id}.jpg"><i class="bi bi-download"></i></a> <a href="#" onclick="copyPrompt('${image.prompt}')"><i class="bi bi-clipboard"></i></a></div> </div> </div></div>`);
+
+                                });
+                                $('#loadingBar').hide();
+                                $('#imagesDiv').show();
+                            }).fail(function() {
+                                console.log("AJAX Issue!")
+                            })
+                        } else {
+                            searchedImage = "";
+                            $("#file").val(null);
+                            $('#uploadedImageDiv').hide()
+                        }
+                    }
+                }
+
+            });
+
+            $('#generate-image-btn').click(function() {
+                if ($('#generateImageFormDiv').is(':hidden')) {
+                    $('#searchBarDiv').hide();
+                    $('#generateImageFormDiv').show();
+                    $('#generate-image-btn').removeClass('btn-secondary').addClass('btn-primary');
+                    $('#search-btn').removeClass('btn-primary').addClass('btn-secondary');
+                } else {
+                    if (isValidForm) {
+                        $(':input[type="submit"]').prop('disabled', true);
+                        if (searchedImage == "") {
+                            $("#loadingBar").show();
+                            $("#outputsDiv").hide();
+                            $('#loading-title').text("Generating Image...")
+
+                            $.ajax({
+                                url: 'http://localhost:5000/text-to-image',
+                                type: 'POST',
+                                data: JSON.stringify({
+                                    prompt: prompt,
+                                    width: width,
+                                    height: height,
+                                    sampler: sampler,
+                                    output: output
+                                }),
+                                dataType: "JSON",
+                                contentType: "application/json",
+                            }).done(function(response) {
+                                console.log(response)
+                                if (response.status == 200) {
+                                    $("#loadingBar").hide();
+                                    $("#outputsDiv").show();
+                                    $("#outputResults").empty();
+                                    $(':input[type="submit"]').prop('disabled', false);
+
+                                    for (let i = 0; i < response.outputs.length; i++) {
+                                        $("#outputResults").append(`<div class="col m-0 p-0"><div class="card"> <img src="/uploads/text-to-image/${response.outputs[i]}" class="card-img-top" alt="${response.prompt}"> <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;"> <p class="card-text text-white text-center" style="font-size: 16px">${response.prompt}</p> <div class="output-links text-center mt-2"> <a href="/uploads/text-to-image/${response.outputs[i]}" target="_blank" download="/uploads/text-to-image/${response.outputs[i]}.jpg"><i class="bi bi-download"></i></a> <a href="#" onclick="copyPrompt('${response.prompt}')"><i class="bi bi-clipboard"></i></a></div> </div> </div></div>`);
+                                    }
+                                }
+                            }).fail(function() {
+                                console.log("AJAX Issue!")
+                            })
+                        } else {
+                            $("#loadingBar").show();
+                            $("#outputsDiv").hide();
+                            $('#loading-title').text("Generating Image...")
+
+                            $.ajax({
+                                url: 'http://localhost:5000/image-to-image',
+                                type: 'POST',
+                                data: JSON.stringify({
+                                    prompt: prompt,
+                                    width: width,
+                                    height: height,
+                                    sampler: sampler,
+                                    output: output,
+                                    imagePath: searchedImageFileName
+                                }),
+                                dataType: "JSON",
+                                contentType: "application/json",
+                            }).done(function(response) {
+                                console.log(response)
+                                $("#loadingBar").hide();
+                                if (response.status == 200) {
+                                    $("#outputsDiv").show();
+                                    $("#outputResults").empty();
+                                    $(':input[type="submit"]').prop('disabled', false);
+
+                                    for (let i = 0; i < response.outputs.length; i++) {
+                                        $("#outputResults").append(`<div class="col m-0 p-0"><div class="card"> <img src="/uploads/text-to-image/${response.outputs[i]}" class="card-img-top" alt="${response.prompt}"> <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;"> <p class="card-text text-white text-center" style="font-size: 16px">${response.prompt}</p> <div class="output-links text-center mt-2"> <a href="/uploads/text-to-image/${response.outputs[i]}" target="_blank" download="/uploads/text-to-image/${response.outputs[i]}.jpg"><i class="bi bi-download"></i></a> <a href="#" onclick="copyPrompt('${response.prompt}')"><i class="bi bi-clipboard"></i></a></div> </div> </div></div>`);
+                                    }
+                                } else if (response.status == 400) {
+                                    alert("Image dimensions must be multiples of 64")
+                                }
+                            }).fail(function() {
+                                console.log("AJAX Issue!")
+                            })
+                        }
+                    } else {
+                        alert("Please fill required field!")
+                    }
+                }
+            });
+
+            imageSamples();
+
+            function imageSamples() {
+                $.ajax({
+                    url: 'https://lexica.art/api/v1/search?q=green%20nature',
+                    type: 'GET',
+                    dataType: "JSON",
+                }).done(function(response) {
+                    //console.log(response)
+                    response.images.forEach(image => {
+                        $("#image-results").append(`<div class="col m-0 p-0"><div class="card"> <img src="${image.srcSmall}" class="card-img-top" alt="${image.prompt}"> <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;"> <p class="card-text text-white text-center" style="font-size: 16px">${image.prompt}</p> <div class="output-links text-center mt-2"> <a href="${image.src}" target="_blank" download="${image.id}.jpg"><i class="bi bi-download"></i></a> <a href="#" onclick="copyPrompt('${image.prompt}')"><i class="bi bi-clipboard"></i></a></div> </div> </div></div>`);
+                    });
+                    $('#imagesDiv').show();
+                }).fail(function() {
+                    console.log("AJAX Issue!")
+                })
+            }
+
+            // Choose image
+            $("#chooseFile").click(function() {
+                $("#file").click();
+            });
+
+            $("#file").change(function() {
+                console.log("hello")
+                var fileName = $(this).val();
+                if (fileName != "") {
+                    var formData = new FormData();
+                    var files = $('#file')[0].files;
+
+                    // Check file selected or not
+                    if (files.length > 0) {
+                        $("#loadingBar").show();
+                        $('#loading-title').text("Image Uploading...")
+                        $(':input[type="submit"]').prop('disabled', true);
+
+                        formData.append('file', files[0]);
+
+                        $.ajax({
+                            url: 'upload',
+                            type: 'POST',
+                            data: formData,
+                            contentType: false,
+                            processData: false,
+                        }).done(function(response) {
+                            if (response.status == 200) {
+                                $("#uploadedImageDiv").show();
+                                $("#loadingBar").hide();
+                                $('#uploaded-image').attr('src', '/uploads/' + response.id + '.' + response.type)
+                                searchedImage = $(location).attr('protocol') + '//' + $(location).attr('host') + '/uploads/' + response.id + '.' + response.type;
+                                searchedImageFileName = response.id + '.' + response.type;
+
+                                if (searchedImage != "") {
+                                    $('#loading-title').text("Searching Image...")
+                                    $('#imagesDiv').hide();
+                                    $('#loadingBar').show();
+                                    $.ajax({
+                                        url: 'https://lexica.art/api/v1/search?q=' + searchedImage,
+                                        type: 'GET',
+                                        dataType: "JSON",
+                                    }).done(function(response) {
+                                        $("#image-results").empty();
+                                        $(':input[type="submit"]').prop('disabled', false);
+                                        response.images.forEach(image => {
+                                            $("#image-results").append(`<div class="col m-0 p-0"><div class="card"> <img src="${image.srcSmall}" class="card-img-top" alt="${image.prompt}"> <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;"> <p class="card-text text-white text-center" style="font-size: 16px">${image.prompt}</p> <div class="output-links text-center mt-2"> <a href="${image.src}" target="_blank" download="${image.id}.jpg"><i class="bi bi-download"></i></a> <a href="#" onclick="copyPrompt('${image.prompt}')"><i class="bi bi-clipboard"></i></a></div> </div> </div></div>`);
+
+                                        });
+                                        $('#loadingBar').hide();
+                                        $('#imagesDiv').show();
+                                    }).fail(function() {
+                                        console.log("AJAX Issue!")
+                                    })
+                                }
+                            }
+                        }).fail(function() {
+                            console.log("AJAX Issue!")
+                        })
+                    }
+                }
+            });
+
+            $('#deleteButton').click(function() {
+                searchedImage = "";
+                $("#file").val(null);
+                $('#uploadedImageDiv').hide();
+                $('#loadingBar').hide();
+
+                imageSamples();
+            });
+
+        });
+
+        function copyPrompt(prompt) {
+            if ($('#searchBarDiv').is(':hidden')) {
+                $('#prompt').val(prompt);
+            } else {
+                $('#search-text').val(prompt);
+            }
+        }
+    </script>
+    <!--===============================================================================================-->
+
+</body>
+
+</html>

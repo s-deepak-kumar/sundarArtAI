@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>sundarArtAI - Explore open source AI models to make content, high accuracy!</title>
+    <meta content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals." name="description">
+    <meta content="audio,video,summarizer,transcript,setiment,analysis,ai,models" name="keywords">
+
+    <meta property="og:title" content="sundarArtAI - Explore open source AI models to make content, high accuracy.!">
+    <meta property="og:description" content="sundarArtAI helps you to generate content within few seconds. It also increase accessibility for users who don't want to wait longer. Optimize your workflows with our advanced AI modals.">
+    <meta property="og:type" content="article">
+
+    <!-- Favicons -->
+    <link href="/img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--===============================================================================================-->
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+    video,
+    audio {
+        box-shadow: 0 0 0 4px rgba(244, 117, 88, 0.5);
+        border-radius: 8px;
+        width: 100%;
+    }
+    
+    audio {
+        border-radius: 50px !important;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+    }
+    
+    .card:is(.selected) {
+        border: 1px solid rgba(88, 55, 208, 1);
+        background-color: rgba(88, 55, 208, 0.1);
+        color: rgba(88, 55, 208, 1) !important;
+    }
+    
+    .card:is(.selected) p {
+        color: rgba(88, 55, 208, 0.7) !important;
+    }
+</style>
+
+<body>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex" style="background-color: #000000; padding: 10px 0;">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between" style="max-width: 95%;">
+
+            <button onclick="history.back()" class="logo d-flex align-items-center">
+                <!-- <img src="/img/logo40px5.png" alt=""> -->
+                <div id="back-btn" class="d-flex align-items-center justify-content-center">
+                    <img src="/img/ic_back.png" width="20" height="20" alt="Logo Pixel Light">
+                </div>
+            </button>
+
+            <div style="width: 100%;">
+                <p class="text-white" style="text-align: center; font-size: 18px;">
+                    <i style="padding: 3.5px 5.5px; font-size: 18px; border-radius: 100%; background-color: rgba(40, 167, 70, 0.2);" class="bi bi-check text-success"></i> <strong class="text-success mr-2"> File selected  </strong> <i style="padding: 3.5px 5.5px; font-size: 18px; border-radius: 100%; background-color: rgba(255, 193, 7, 0.2);"
+                        class="bi bi-box text-warning"></i> <span class="text-warning mr-2">Select modal</span> <i style="padding: 3.5px 5.5px; font-size: 18px; border-radius: 100%; background-color: rgba(108, 117, 125, 0.2);" class="bi bi-card-text text-secondary"></i>                    <span class="text-secondary">View Results</span></p>
+            </div>
+
+            <button id="next-btn" class="btn btn-primary" style="text-align: right;">Next</button>
+
+            <!-- .navbar -->
+
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section class="about d-flex">
+
+            <div class="container p-0" style="background-color: transparent;">
+                <div class="row m-3">
+                    <div class="card-columns m-3">
+                        <div class="card selected" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-chat-dots" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Transcription</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">Convert your audio and video file into text with advanced AI model using our simple Speech-to-Text API.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-card-text" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Summarization (Bullets)</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">sundarArtAI can generate a single abstractive summary of the entire source submitted for transcription.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-text-center" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Auto Chapters</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">sundarArtAI providing an automatically generated summary for each chapter of content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-fonts" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Topic Detection</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">sundarArtAI can label the topics that are spoken in your entire audio/video files, following the standardized IAB Taxonomy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-paragraph" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Content Moderation</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">sundarArtAI can detect spoken sensitive words, and pinpoint exactly when and what was spoken.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-megaphone" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Important Phrases</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">We detect important phrases and words from your file, Results may take up to 60 seconds longer to process.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-emoji-smile" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Sentiment Analysis</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">Detect the sentiment of each spoken sentence in your file & return the confidence score and exact timestamp.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-shop" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Entity Detection</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">We Identify entities that are spoken in your source files, such as person and company names, locations, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-people" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">PII Reduction</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">sundarArtAI remove Personally Identifiable Information, such as phone numbers and social security numbers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-chat-square-dots" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Speaker Labels</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">Automatically detect the number of speakers in your source file, and return the text associated with its speaker.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-telephone-outbound" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Dual Channel</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">If your source is a dual channel audio file, sundarArtAI supports transcribing each channel separately.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body row">
+                                <div class="col-1">
+                                    <i class="bi bi-chat-square" style="font-size: large"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title mb-0">Profanity Filtering</h5>
+                                    <p class="card-text mt-1" style="font-size: 16px; color: rgba(0, 0, 0, 0.7);">By default, the API will return a verbatim transcription of the audio, meaning profanity will be present in the transcript.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer p-4 m-0" style="background-color: transparent;">
+        <div class="container text-center">
+            <h3 class="mt-3">@sundarArtAI</h3>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!--===============================================================================================-->
+    <script>
+        var modals = [];
+        $('.card-columns .card').on('click', function() {
+            var thisBtn = $(this);
+
+            var titleText = thisBtn.children().find('.card-title').text();
+            if (titleText.toLowerCase() != "transcription") {
+                if (modals.some(x => x === titleText.toLowerCase())) {
+                    var index = modals.indexOf(titleText.toLowerCase());
+                    modals.splice(index, 1);
+                    thisBtn.removeClass('selected');
+                } else {
+                    if (titleText.toLowerCase() == "summarization (bullets)") {
+                        if (modals.some(x => x === "auto chapters")) {
+                            alert("Please de-select auto chapters first to select summarization (bullets)!")
+                        } else {
+                            modals.push(titleText.toLowerCase())
+                            thisBtn.addClass('selected');
+                        }
+                    } else if (titleText.toLowerCase() == "auto chapters") {
+                        if (modals.some(x => x === "summarization (bullets)")) {
+                            alert("Please de-select summarization (bullets) first to select auto chapters!")
+                        } else {
+                            modals.push(titleText.toLowerCase())
+                            thisBtn.addClass('selected');
+                        }
+                    } else if (titleText.toLowerCase() == "speaker labels") {
+                        if (modals.some(x => x === "dual channel")) {
+                            alert("Please de-select dual channel first to select speaker labels!")
+                        } else {
+                            modals.push(titleText.toLowerCase())
+                            thisBtn.addClass('selected');
+                        }
+                    } else if (titleText.toLowerCase() == "dual channel") {
+                        if (modals.some(x => x === "speaker labels")) {
+                            alert("Please de-select speaker labels first to select dual channel!")
+                        } else {
+                            modals.push(titleText.toLowerCase())
+                            thisBtn.addClass('selected');
+                        }
+                    } else {
+                        modals.push(titleText.toLowerCase())
+                        thisBtn.addClass('selected');
+                    }
+                }
+            }
+
+        });
+
+        var mimeType = '<%=mimeType%>';
+        var id = '<%=id%>';
+        var type = '<%=type%>';
+
+        $("#next-btn").click(function() {
+            if (id != '' && mimeType != "" && type != "" && modals != null) {
+                window.location = "/summarize/" + mimeType + "/" + type + "/" + id + "?modals=" + modals
+            }
+        });
+    </script>
+    <!--===============================================================================================-->
+
+</body>
+
+</html>
